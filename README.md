@@ -5,16 +5,24 @@ In assessing whether miles per gallon (MPG) has a statistically significant rela
 
 This model seems to account for much of the variability in data predicting MPG outputs (R-squared = ~.7). However, the intercept is not a substantive figure (~ -104; it is not possible to have negative MPG). Therefore, there may be additional variables that are not included in the data set that explain MPG results.
 
-![]()
+![Reg output](https://github.com/temersonzetina/MechaCar_Statistical_Analysis/blob/main/Images/reg_output.png)
 
 ## Summary Statistics on Suspension Coils
 The current design specifications for the MechCar suspension coils require that the variance of the suspension coils not exceed 100 PSI. Lots 1 (PSI=0.98) and 2 (PSI=7.5) meet this qualification, but Lot 3 (PSI=170.29) does not. It is not completely clear why this is the case, but the other summary statistics may lend some insight into this. The mean and median PSI values for all 3 lots are within just 2 increments of one another, which aligns with expectations. Lot 3's standard deviation  (~13 PSI) greatly surpasses the other 2, however. This may mean, then, that Lot 3 has a significant number of coils roughly 13 PSI above or below the baseline of 1500. 
 
+![Total summary](https://github.com/temersonzetina/MechaCar_Statistical_Analysis/blob/main/Images/Screen%20Shot%202021-11-28%20at%201.05.52%20PM.png)
+
+![Lot summary](https://github.com/temersonzetina/MechaCar_Statistical_Analysis/blob/main/Images/Screen%20Shot%202021-11-28%20at%201.11.00%20PM.png)
+
 ## T-tests on Suspension Coils
-* For the t-test comparing all manufacturing lots to the mean of the population, we fail to reject the null hypothesis (p > .05). 
+* For the t-test comparing all manufacturing lots to the mean of the population, we fail to reject the null hypothesis (p > .05).
+![TTest overall](https://github.com/temersonzetina/MechaCar_Statistical_Analysis/blob/main/Images/ttest_overall.png) 
 * For the t-test comparing Lot 1 to the mean of the population, we reject the null hypothesis (p < .05).  The two means are statistically dissimilar.
+![TTest Lot 1](https://github.com/temersonzetina/MechaCar_Statistical_Analysis/blob/main/Images/ttest_lot1.png)
 * For the t-test comparing Lot 2 to the mean of the population, we reject the null hypothesis (p < .05). The two means are statistically dissimilar.
+![TTest Lot 2](https://github.com/temersonzetina/MechaCar_Statistical_Analysis/blob/main/Images/ttest_lot2.png)
 * For the t-test comparing Lot 3o the mean of the population, we fail to reject the null hypothesis (p > .05).
+![TTest Lot 3](https://github.com/temersonzetina/MechaCar_Statistical_Analysis/blob/main/Images/ttest_lot3.png)
 
 ## Study Design: MechaCar vs. Competition
 Comparing MechaCar's key indicators to those of competitors may help company strategists determine what consumer segment(s) to target for marketing. I propose that we use JD Power ratings as our key indicator (or outcome variable) for this study, as JD Power produces some of the most widely-trusted consumer reports in the automobile industry. JD Power's "overall rating" for new cars is a composite that consumers consider to be an indicator of each car's performance.
